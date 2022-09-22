@@ -1,0 +1,318 @@
+:root{
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --color-dark: #525252;
+    --color-black: #141415;
+    --color-primary: #f24e1e;
+    --color-primary-light: hsl(14, 89%, 53%, 12%);
+    --color-success: #29f5a6;
+    --color-warning: #ffce31;
+
+    --transition: all 300ms ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+    color: rgb(124, 124, 124);;
+    max-width: 100vw;    
+}
+
+
+
+h2{
+    font-size: 2.6rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 0.86rem;
+}
+
+p{
+    line-height: 1.8;
+}
+
+.menu{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section{
+    padding: 10rem 0 7rem;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+section h1{
+    text-align: center;
+    display: block;
+    margin-bottom: 5rem;
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    padding: 1.4rem 3.4rem;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 2rem 0;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    box-shadow: 0 1rem 3rem pink;
+}
+
+.btn-primeiro{
+    background: pink;
+    color: white;
+}
+
+nav{
+    width: 100%;
+    height: 5rem;
+    background: pink;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--color-light);
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+nav button{
+    display: none;
+}
+
+nav h3{
+    color: white;
+}
+
+nav .menu ul{
+    display: flex;
+    height: 100%;
+}
+
+nav .menu ul li a{
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 124, 124);
+    position: relative;
+    transition: var(--transition);
+}
+
+nav .menu ul li a:hover{
+    color: white;
+
+}
+
+section.informacoes{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: -1rem;
+    padding-bottom: 1rem;
+}
+
+section.informacoes .informacoes2{
+    display: grid;
+    grid-template-columns: 50rem auto 28rem;
+    gap: 3rem;
+}
+
+section.informacoes .infos h1{
+    text-align: left;
+    font-size: 60px;
+    margin: 0;
+}
+
+section.informacoes h3{
+    margin: 2.4rem 0 1rem;
+}
+
+section.informacoes .infos p{
+    width: 45rem;
+
+}
+
+section.informacoes .fotoperfilarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.informacoes .fotoperfilarea .outer-circle{
+    width: 28rem;
+    height: 28rem;
+    top: 20%;
+    right: 5%;
+    border: 10px solid pink;
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+    display: flex;
+    overflow: hidden;
+}
+
+section.servicos{
+    background: pink;
+    padding-top: 13.5%;
+}
+
+.servicos h1{
+    font-size: 50px;
+}
+
+section.servicos .informacoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0px 20px 0px;
+}
+
+section.servicos .informacoes .servico{
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    cursor: default;
+    transition: all 300ms ease;
+}
+
+section.servicos .informacoes .servico:hover{
+    box-shadow: 0 1rem 3rem black;
+}
+
+
+
+.testes{
+    display: grid;
+    gap: 12.5rem;
+    justify-content: space-around;
+    background-color: white;
+    padding: 3rem;
+    margin-top: 0rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+section.testes .projetos .projeto h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+section.testes .projetos .projeto p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.testes1 h4{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.testes1 h1{
+    font-size: 25px;
+    text-align: justify;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+section.testes .projetos .projeto{
+    background: pink;
+    border-radius: 10%;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    cursor: cell;
+    transition: all 300ms ease;
+}
+
+section.testes .projetos .projeto:hover{
+    box-shadow: 0 1rem 2rem black;
+}
+
+section.testes .projetos .projeto .imgthumb .fotinha{
+    border-radius: 10%;
+}
+
+footer{
+    background: pink;
+}
+
+footer .textosfooter h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+footer .conteudos ul{
+    display: flex;
+    height: 100%;
+}
+
+footer .conteudos ul li a{
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: rgb(124, 124, 124);
+    position: relative;
+    transition: var(--transition);
+}
+
+footer .conteudos ul li a:hover{
+    color: white;
+}
+
+.adriano{
+    background: white;
+    padding: 20px;
+}
+
+.adriano h4{
+    text-align: center;
+}
+
